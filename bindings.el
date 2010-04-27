@@ -9,6 +9,8 @@
 (global-set-key [M-up] 'windmove-up)              ; move to upper window
 (global-set-key [M-down] 'windmove-down)          ; move to downer window
 
+(global-set-key "\C-z" 'undo)
+(global-set-key "\M-z" 'redo)
 
 ;;(global-set-key "`" 'dabbrev-expand)
 
