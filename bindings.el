@@ -10,6 +10,6 @@
 (global-set-key [M-down] 'windmove-down)          ; move to downer window
 
 
-(global-set-key "`" 'dabbrev-expand)
+;;(global-set-key "`" 'dabbrev-expand)
 
 (global-set-key "\C-xf" 'swap-windows)

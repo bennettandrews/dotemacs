@@ -12,16 +12,16 @@
 
 (setq backup-directory-alist
       (cond ((eq system-type 'windows-nt)
-	     '((".*" . "c:/temp")))
-	    ((eq system-type 'gnu/linux)
-	     '((".*" . "~/.emacs.tmp")))
-	    ((eq system-type 'vax-vms)
-	     nil)))
+             '((".*" . "c:/temp")))
+            ((eq system-type 'gnu/linux)
+             '((".*" . "~/.emacs.tmp")))
+            ((eq system-type 'vax-vms)
+             nil)))
 
 
 (setq ido-enable-flex-matching t) ;;fuzzy matching!!!
 
-
+(setq search-highlight t)
 (setq x-select-enable-clipboard t)
 (column-number-mode t)
 
@@ -35,9 +35,6 @@
 (global-font-lock-mode t)
 (which-func-mode t)
 (column-number-mode t)
-
-
-
 
 ;;f**k you beeps
 (setq ring-bell-function 'ignore)
