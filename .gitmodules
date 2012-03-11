@@ -4,9 +4,6 @@
 [submodule "elisp/ensime"]
 	path = elisp/ensime
 	url = git://github.com/aemoncannon/ensime.git
-[submodule "elisp/scala-mode"]
-	path = elisp/scala-mode
-	url = git://github.com/haxney/scala-mode.git
 [submodule "elisp/color-theme-solarized"]
 	path = elisp/color-theme-solarized
 	url = git://github.com/sellout/emacs-color-theme-solarized.git

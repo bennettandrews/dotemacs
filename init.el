@@ -1,5 +1,7 @@
 (add-to-list 'load-path "~/.emacs.d")
 (add-to-list 'load-path "~/.emacs.d/elisp")
+;; TODO: fix this
+(add-to-list 'load-path "~/.emacs.d/elisp/ensime/src/main/elisp")
 
 ;; add all files in elisp
 (let* ((files (directory-files "~/.emacs.d/elisp" t "[^\.+]")))
