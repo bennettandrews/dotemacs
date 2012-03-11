@@ -21,6 +21,14 @@
   (let ((search (read-from-minibuffer "Google Search: ")))
     (browse-url (concat "http://www.google.com/search?q=" search))))
 
+(defun indent-buffer ()
+  "indent whole buffer"
+  (interactive)
+  (delete-trailing-whitespace)
+  (indent-region (point-min) (point-max) nil)
+  (untabify (point-min) (point-max)))
+
+
 
 
 
