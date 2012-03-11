@@ -1,0 +1,9 @@
+[submodule "elisp/markdown-mode"]
+	path = elisp/markdown-mode
+	url = git://github.com/defunkt/markdown-mode.git
+[submodule "elisp/ensime"]
+	path = elisp/ensime
+	url = git://github.com/aemoncannon/ensime.git
+[submodule "elisp/scala-mode"]
+	path = elisp/scala-mode
+	url = git://github.com/haxney/scala-mode.git
