@@ -1,7 +1,10 @@
 (add-to-list 'load-path "~/.emacs.d")
 (add-to-list 'load-path "~/.emacs.d/elisp")
 ;; TODO: fix this
-(add-to-list 'load-path "~/.emacs.d/elisp/ensime/src/main/elisp")
+(add-to-list 'load-path "~/.emacs.d/elisp/ensime/elisp")
+
+;;TODO fix this
+(setq exec-path (append exec-path (list "/usr/local/bin")))
 
 ;; add all files in elisp
 (let* ((files (directory-files "~/.emacs.d/elisp" t "[^\.+]")))
