@@ -1,11 +1,11 @@
 (add-to-list 'load-path "~/.emacs.d")
-(add-to-list 'load-path "~/.emacs.d/vendor")
+(add-to-list 'load-path "~/.emacs.d/elisp")
 
-(add-to-list 'load-path "~/.emacs.d/vendor/ensime")
-(add-to-list 'load-path "~/.emacs.d/vendor/ensime/elisp")
-(add-to-list 'load-path "~/.emacs.d/vendor/scala-mode")
+;;(add-to-list 'load-path "~/.emacs.d/vendor/ensime")
+;;(add-to-list 'load-path "~/.emacs.d/vendor/ensime/elisp")
+;;(add-to-list 'load-path "~/.emacs.d/vendor/scala-mode")
 ;; add all the directories in .emacs.d/vendor/ to the path
-(let* ((files (directory-files "~/.emacs.d/vendor" t "[^\.+]")))
+(let* ((files (directory-files "~/.emacs.d/elisp" t "[^\.+]")))
   (mapcar (lambda (d) (add-to-list 'load-path d)) files))
 
 (load "requires")
