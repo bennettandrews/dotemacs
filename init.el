@@ -1,10 +1,7 @@
 (add-to-list 'load-path "~/.emacs.d")
 (add-to-list 'load-path "~/.emacs.d/elisp")
 
-;;(add-to-list 'load-path "~/.emacs.d/vendor/ensime")
-;;(add-to-list 'load-path "~/.emacs.d/vendor/ensime/elisp")
-;;(add-to-list 'load-path "~/.emacs.d/vendor/scala-mode")
-;; add all the directories in .emacs.d/vendor/ to the path
+;; add all files in elisp
 (let* ((files (directory-files "~/.emacs.d/elisp" t "[^\.+]")))
   (mapcar (lambda (d) (add-to-list 'load-path d)) files))
 
@@ -41,7 +38,6 @@
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
-
 
 ;;f**k you beeps
 (setq ring-bell-function 'ignore)
