@@ -4,3 +4,9 @@
 [submodule "elisp/color-theme-solarized"]
 	path = elisp/color-theme-solarized
 	url = git://github.com/sellout/emacs-color-theme-solarized.git
+[submodule "elisp/auto-indent-mode"]
+	path = elisp/auto-indent-mode
+	url = git://github.com/mlf176f2/auto-indent-mode.el.git
+[submodule "elisp/php-mode"]
+	path = elisp/php-mode
+	url = git://github.com/ejmr/php-mode.git

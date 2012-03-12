@@ -6,8 +6,10 @@
 ;;(require 'whitespace)
 (require 'markdown-mode)
 (require 'scala-mode)
-;;(require 'php-mode)
-;;(require 'nxml-mode)
+(require 'auto-indent-mode)
+;;(auto-indent-global-mode)
+(require 'php-mode)
+(require 'nxml-mode)
 ;;(defun scala-turnoff-indent-tabs-mode ()
 ;;  (setq indent-tabs-mode nil))
 

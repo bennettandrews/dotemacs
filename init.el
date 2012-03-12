@@ -20,8 +20,8 @@
 
 ;; Put autosave files (ie #foo#) and backup files (ie foo~) in ~/.emacs.d/.
 (custom-set-variables
-  '(auto-save-file-name-transforms '((".*" "~/.emacs.d/autosaves/\\1" t)))
-  '(backup-directory-alist '((".*" . "~/.emacs.d/backups/"))))
+ '(auto-save-file-name-transforms '((".*" "~/.emacs.d/autosaves/\\1" t)))
+ '(backup-directory-alist '((".*" . "~/.emacs.d/backups/"))))
 
 ;;fuzzy matching!!!
 (setq ido-enable-flex-matching t)
@@ -47,9 +47,9 @@
 ;;f**k you beeps
 (setq ring-bell-function 'ignore)
 
-; make whitespace-mode use just basic coloring
+                                        ; make whitespace-mode use just basic coloring
 (setq whitespace-style (quote
-  ( spaces tabs newline space-mark tab-mark newline-mark)))
+                        ( spaces tabs newline space-mark tab-mark newline-mark)))
 
 ;; make whitespace-mode use “¶” for newline and “▷” for tab.
 ;; together with the rest of its defaults
