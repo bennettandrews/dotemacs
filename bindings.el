@@ -4,6 +4,7 @@
 (global-set-key "\C-xm" 'execute-extended-command)
 (global-set-key "\C-h" 'backward-delete-char)
 (global-set-key "\C-c\C-w" 'backward-kill-word)
+(global-set-key "\M-?" 'help-command)
 
 (global-set-key [M-left] 'windmove-left)          ; move to left windnow
 (global-set-key [M-right] 'windmove-right)        ; move to right window
