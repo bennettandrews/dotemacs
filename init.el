@@ -20,8 +20,10 @@
 
 ;; Put autosave files (ie #foo#) and backup files (ie foo~) in ~/.emacs.d/.
 (custom-set-variables
-  '(auto-save-file-name-transforms '((".*" "~/.emacs.d/autosaves/\\1" t)))
-  '(backup-directory-alist '((".*" . "~/.emacs.d/backups/"))))
+ '(auto-save-file-name-transforms '((".*" "~/.emacs.d/autosaves/\\1" t)))
+ '(backup-directory-alist '((".*" . "~/.emacs.d/backups/"))))
+
+(defalias 'yes-or-no-p 'y-or-n-p)
 
 ;;fuzzy matching!!!
 (setq ido-enable-flex-matching t)
@@ -47,25 +49,26 @@
 ;;f**k you beeps
 (setq ring-bell-function 'ignore)
 
-; make whitespace-mode use just basic coloring
+                                        ; make whitespace-mode use just basic coloring
 (setq whitespace-style (quote
-  ( spaces tabs newline space-mark tab-mark newline-mark)))
+                        ( spaces tabs newline space-mark tab-mark newline-mark)))
 
 ;; make whitespace-mode use “¶” for newline and “▷” for tab.
 ;; together with the rest of its defaults
-;; (setq whitespace-display-mappings
-;;       '(
-;;     (space-mark 32 [183] [46]) ; normal space, ·
-;;     (space-mark 160 [164] [95])
-;;     (space-mark 2208 [2212] [95])
-;;     (space-mark 2336 [2340] [95])
-;;     (space-mark 3616 [3620] [95])
-;;     (space-mark 3872 [3876] [95])
-;; ;;    (newline-mark 10 [182 10]) ; newlne, ¶
-;;     (tab-mark 9 [9655 9] [92 9]) ; tab, ▷
-;;  ))
+(if window-system
+    (setq whitespace-display-mappings
+          '(
+     (space-mark 32 [183] [46]) ; normal space, ·
+     (space-mark 160 [164] [95])
+     (space-mark 2208 [2212] [95])
+     (space-mark 2336 [2340] [95])
+     (space-mark 3616 [3620] [95])
+     (space-mark 3872 [3876] [95])
+     (newline-mark 10 [182 10]) ; newlne, ¶
+     (tab-mark 9 [9655 9] [92 9]) ; tab, ▷
+     )))
 
-;; I hate tabs!
+;; no tabs
 (setq-default indent-tabs-mode nil)
 
 (setq-default tab-width 4)
