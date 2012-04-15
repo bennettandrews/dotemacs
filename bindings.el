@@ -19,3 +19,6 @@
 (global-set-key "\C-xf" 'swap-windows)
 
 (global-set-key (kbd "C-x C-b") 'ibuffer)
+
+(global-set-key [f8] 'deft)
+

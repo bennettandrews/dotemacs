@@ -4,6 +4,7 @@
 (require 'ensime)
 (require 'markdown-mode)
 (require 'scala-mode)
+(require 'go-mode)
 
 ;; Tools
 (require 'ido)
@@ -11,7 +12,10 @@
 (require 'color-theme)
 (require 'color-theme-solarized)
 (require 'magit)
-
+(require 'deft)
+(setq deft-text-mode 'markdown-mode)
+(setq deft-directory "~/Dropbox/Notes")
+(setq deft-extension "md")
 ;; Not using at the moment
 ;;(require 'yasnippet)
 
