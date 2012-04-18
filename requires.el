@@ -5,7 +5,7 @@
 (require 'markdown-mode)
 (require 'scala-mode)
 (require 'go-mode)
-
+(require 'puppet-mode)
 ;; Tools
 (require 'ido)
 (ido-mode t)
