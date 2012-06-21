@@ -1,7 +1,7 @@
 (add-to-list 'auto-mode-alist '("\\.js\\'" . javascript-mode))
 
 (add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
-
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 (autoload 'ruby-mode "ruby-mode" "Major mode for ruby files" t)
 (add-to-list 'auto-mode-alist '("\\.(rb|gem|gemspec)$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\Rakefile$" . ruby-mode))

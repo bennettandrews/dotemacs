@@ -6,6 +6,7 @@
 (require 'scala-mode)
 (require 'go-mode)
 (require 'puppet-mode)
+(require 'yaml-mode)
 ;; Tools
 (require 'ido)
 (ido-mode t)
