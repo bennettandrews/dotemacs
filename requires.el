@@ -7,6 +7,7 @@
 (require 'go-mode)
 (require 'puppet-mode)
 (require 'yaml-mode)
+(require 'coffee-mode)
 ;; Tools
 (require 'ido)
 (ido-mode t)
